@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Differantiation Tags</title>
+  </head>
+
+  <body>
+    <!-- hr คำสั่งที่ใช้กำหนดเส้นคั่น จะเป็นคำสั่งที่ไม่ต้องมีคำสั่งปิด, br เป็นคำสั่งขึ้นบรรทัดใหม่-->
+    <div>
+      <h1>Head 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maxime.
+        Corporis voluptates mollitia dolores. Odio sit, est expedita harum
+        nesciunt velit modi eos dignissimos eum veniam iusto. Mollitia, maxime
+        explicabo.
+      </p>
+      <hr />
+      <h1>Head 2</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maiores
+        totam deleniti dolorum impedit natus mollitia inventore, reprehenderit
+        non et minima saepe laudantium quisquam quod blanditiis vero molestiae,
+        asperiores magnam! Excepturi itaque quam assumenda corporis reiciendis
+        laudantium ipsam distinctio aliquid.
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, quia.
+      </p>
+    </div>
+    <br />
+    <div>
+      <!-- <ul> กำหนดรายการที่ไม่มีตัวเลขแสดงลำดับ 
+      มาพร้อม พร้อมกับแท็ก <li> เพื่อสร้างรายการ, <ol> กำหนดรายการที่มีตัวเลขแสดงลำดับ
+        มาพร้อม พร้อมกับแท็ก <li> เพื่อสร้างรายการ-->
+      <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+      </ul>
+      <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+      </ol>
+    </div>
+    <div>
+      <!-- select เป็น Drop Drown List การรับข้อมูลจากการคลิกเมาส์เลือกรายการ ที่กำหนดไว้ โดยจะเลือกได้เพียงหนึ่งรายการ ,
+        checkbox เป็นรูปแบบการเลือกชนิดเลือกได้หลายรายการ มีประโยชน์มากในการสร้างตัวเลือกที่ไม่จำเป็นต้องพิมพ์ข้อมูลลงไป 
+        เพียงแต่คลิกเลือกที่ปุ่มนั้นๆ ก็เป็นการกรอกเพื่อรับข้อมูล ปุ่มแบบ checkbox สามารถกำหนดค่าได้หลายค่าหรือเลือกได้หลายตัวเลือก,
+        radio button รูปแบบจะคล้ายๆกับ checkbox เพียงแต่สามารถเลือกข้อมูลเพียงตัวเลือกเดียวเท่านั้นเหมาะสำหรับนำไปใช้การเลือกคำถามที่มีตัวเลือก เช่น คำนำหน้า นาย, นางสาว, นาง เป็นต้น-->
+      <ul>
+        <li>
+          <h<input
+            type="checkbox"
+            name="check"
+            value="1"
+          />รายได้มากกว่า30000บาท
+        </li>
+      </ul>
+
+      <br />
+      <select>
+        <option selected>---เลือกข้อความ--- </option>
+        <option value="1">ชื่อตัวแปร1 </option>
+        <option value="2">ชื่อตัวแปล 2 </option>
+      </select>
+      <br />
+      <input type="radio" name="sex" value="0" />นาย
+      <input type="radio" name="sex" value="0" />นาง
+      <input type="radio" name="sex" value="0" />นางสาว
+    </div>
+    <br />
+    <br />
+
+    <div>
+      <!-- div คือ แท็กประเภทนึงของ html ใช้สำหรับครอบวัตถุที่เราต้องการ เพื่อจัดรูปแบบต่างๆ ให้กับวัตถุในตำแหน่งนั้นๆ
+        สามารถใส่ค่าไปตรงๆ ใน div นั้น หรือ ใส่ id กับ class เพื่อใช้อ้างอิงกับการจัด CSS ได้ตามความเหมาะสม ,
+    span คล้ายกับ tag <div> แต่มักใช้จัดแต่ง ข้อความสั้นๆ (inline) ที่อยู่ใต้การกำหนดรูปแบบของ tag อื่นอยู่แล้ว 
+        เพื่อให้มีรูปแบบที่ต่างไปจากรูปแบบเหล่านั้น และจะไม่ขึ้นบรรทัดใหม่ (ไม่เหมือนกับ <div>)-->
+
+      <div align="center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
+        earum maiores vero molestiae esse rem dolore voluptas. Aliquam vitae qui
+        voluptatem accusantium voluptas recusandae provident laudantium atque
+        ducimus nisi?
+      </div>
+      <h2>lorem</h2>
+      <p>
+        test
+        <span style="font-weight: bold; color: blueviolet;">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </span>
+      </p>
+    </div>
+    <!-- <script> ใช้สำหรับกำหนดค่า javascript บน html, <style> ใช้สำหรับ กำหนดค่า CSS บน html -->
+
+    <style>
+      ul {
+        color: blue;
+      }
+    </style>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+  </body>
+</html>
